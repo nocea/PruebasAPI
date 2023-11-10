@@ -12,7 +12,7 @@ public class pruebas {
 	public static void main(String[] args) {
 		try {
             // URL de la API que quieres consumir
-            String apiUrl = "http://localhost:8080/api/usuarios";
+            String apiUrl = "http://localhost:8080/api/usuarios/get";
 
             // Crear la conexión
             URL url = new URL(apiUrl);
