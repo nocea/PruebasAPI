@@ -5,14 +5,12 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import javax.net.ssl.HttpsURLConnection;
-
-public class pruebas {
+public class prueba_acceso {
 
 	public static void main(String[] args) {
 		try {
             // URL de la API que quieres consumir
-            String apiUrl = "http://localhost:8080/api/usuarios/get";
+            String apiUrl = "http://localhost:8080/api/accesos";
 
             // Crear la conexión
             URL url = new URL(apiUrl);
@@ -35,7 +33,7 @@ public class pruebas {
                 }
                 reader.close();
 
-                // Aquí puedes procesar la respuesta (almacenarla, analizarla, etc.)
+                
                 System.out.println("Respuesta de la API: " + respuesta.toString());
             } else {
                 System.out.println("Error al hacer la solicitud. Código de respuesta: " + responseCode);
@@ -47,6 +45,7 @@ public class pruebas {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
 	}
 
 }
